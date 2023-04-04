@@ -1,0 +1,10 @@
+.wrapper {
+   max-width: 70rem; /*lagura máxima*/
+   margin: 2rem auto; /*magem*/
+   padding: 0 1rem; /**/
+   
+   display: grid; /*cria o grid*/
+   grid-template-columns: 256px 1fr; /* uma coluna tem tamanho fixo e a outra ocupa o resto (uma fração)*/
+   gap: 2rem; /* espaço entre colunas*/
+   align-items: flex-start; /*para alinha pelo topo e evitar que o sidebar tente ter o mesmo tamanho dos posts*/
+}
