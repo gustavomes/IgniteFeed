@@ -1,0 +1,113 @@
+.comment {
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.comment + .comment{
+   margin-top: 1rem;
+    
+}
+
+.CommentAvatar {
+   
+    width: 3rem;
+    height: 3rem;
+    border-radius: 8px;
+   
+    
+}
+
+.CommentBox {
+    flex: 1;
+}
+
+.authorinfo  {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.commentContent{
+    
+    display: flex;
+    flex-direction: column;
+    background: var(--gray-700);
+    border-radius: 8px;
+    padding: 1rem;
+
+}
+
+.commentContent header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.authorinfo strong {
+    color: var(--gray-100);
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+.authorinfo time {
+    color: var(--gray-400);
+    font-size: 0.7rem;
+    line-height: 1.6;
+
+}
+
+.commentContent  button{
+    background: transparent;
+    border: none;
+    color: var(--gray-400);
+    cursor: pointer;
+    line-height: 0;
+    border-radius: 2px;
+}
+
+.commentContent  button:hover {
+    color: var(--red-500);
+}
+
+
+.commentContent p{
+    margin-top: 1rem;
+    color: var(--gray-300);
+    font-size: 0.8rem;
+    
+}
+
+footer {
+    color: var(--gray-400);
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+}
+
+footer button{
+    display: flex;
+    gap: 0.5rem;
+    background: transparent;
+    border: none;
+    color: var(--gray-400);
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+footer button:hover {
+    color: var(--green-500);
+}
+
+footer button span {
+
+    display: list-item;
+    margin-left: 1rem;
+
+}
+ 

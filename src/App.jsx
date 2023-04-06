@@ -1,7 +1,8 @@
 
 import { Header } from './components/Header/Header';
-import { Post } from './Post';
+import { Post } from './components/Post/Post';
 import { Sidebar } from './components/SideBar/Sidebar';
+
 
 import './global.css' /* css global*/
 import styles from './App.module.css' /* css escopado*/;
@@ -17,13 +18,18 @@ export function App() {
       <div className={styles.wrapper} /* utilzação do css escopado*/> 
       <Sidebar />
       <main>
+         
+        
           <Post /* Função "Post" --> Post.Jsx - Usa a estrutura crianda nesse arquivo*/
                 author="Gustavo Medeiros" /* parâmetros da função "Post"*/
+                info="Web Developer"
                 content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, iusto sapiente, quae nisi quis accusamus soluta officiis ullam hic nostrum eligendi quasi animi voluptates quo vitae! Minus recusandae quas soluta.
                 "
           />
+
           <Post 
-            author="Gabriel Fernandes" 
+            author="Gabriel Fernandes"
+            info="Web Developer"
             content="oi jhfjhjfh dolor sit amet oi adipisicing elit. Voluptate, iusto sapiente, quae nisi quis accusamus soluta officiis ullam hic nostrum eligendi quasi animi voluptates quo vitae! Minus recusandae quas soluta."
           />
       </main>

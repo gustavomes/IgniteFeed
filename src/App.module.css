@@ -8,3 +8,13 @@
    gap: 2rem; /* espaço entre colunas*/
    align-items: flex-start; /*para alinha pelo topo e evitar que o sidebar tente ter o mesmo tamanho dos posts*/
 }
+
+@media (max-width: 768px) {
+
+   html {
+      font-size: 87,5%; /* redução da font do Html para @media - mobile por exemplo*/
+   }
+   .wrapper {
+      grid-template-columns: 1fr; /*mudança para uma coluna quando eu chego ao valor de @media*/
+   }
+}

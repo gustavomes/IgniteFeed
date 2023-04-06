@@ -1,6 +1,7 @@
 import { PencilSimpleLine } from 'phosphor-react'; /* biblioteca de ícones Phosphor icons */
 import style from './Sidebar.module.css';
 import capaaside from '../../assets/capaaside.jpg';
+import { Avatar } from '../Avatar/Avatar';
 
 /* criação do componente Side Bar */
 
@@ -10,7 +11,10 @@ export function Sidebar () {
         <aside className={style.sidebar}>
             <img className={style.cover} src={ capaaside } />
             <div className={style.profile}> 
-                <img className={style.avatar} src="https://avatars.githubusercontent.com/u/61232100?v=4" alt="" />
+                <Avatar  
+                hasBorder 
+                src="https://avatars.githubusercontent.com/u/61232100?v=4" alt="" 
+                />
                 <strong> Gustavo Medeiros </strong>
                 <span> Web Developer</span>
 

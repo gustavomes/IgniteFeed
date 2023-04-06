@@ -55,6 +55,8 @@
     display: flex; /* opções do grid - testar na inspeção */
     align-items: center;
     justify-content: center;
+
+    transition: color 0.1s, background-color 0.2s;
     
 
 }
@@ -65,12 +67,14 @@
 
 }
 
-.avatar {
+/* .avatar {
 
     width: calc(3rem + 12px);
     height: calc(3rem + 12px);
     border-radius: 8px;
     border: 4px solid var(--gray-600);
-    outline: 1px solid var(--green-500); /* linha por fora da borda */
+    outline: 1px solid var(--green-500); 
+    }
 
-}
+    /* linha por fora da borda  - foi para o componente/css avatar*/
+
