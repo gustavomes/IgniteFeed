@@ -2,7 +2,7 @@ import { ThumbsUp, Trash } from 'phosphor-react'; /* biblioteca de ícones Phosp
 import { Avatar } from '../Avatar/Avatar';
 import style from './Comment.module.css';
 
-export function Comment (){
+export function Comment ({content}){
     return (
     <article className={style.comment} >
            
@@ -23,7 +23,7 @@ export function Comment (){
                         </button>
                 </header>
               
-                <p>Muito bom Devon, parabéns!! 👏👏</p>
+                <p>{content}</p>
                  
             </div>
             
